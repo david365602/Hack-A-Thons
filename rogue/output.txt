@@ -1,0 +1,30 @@
+We Shall Begin
+What is the IP address of your current System?
+Give an IP address for your other network ex: 172.16.5.1
+Give your dns IP address ex: 172.16.5.1
+for multiple dns servers ex: 172.16.5.1, 8.8.8.8
+What is the subnet mask of the network you want to create? ex: 255.255.255.0
+What is the network subnet that you will create? ex: 192.168.1.0
+Enter the range of IPs EXACTLY like this: 192.168.1.5 192.168.1.150
+Enter the broadcast address ex: 192.168.1.255
+What is network card name that you will create the AP on
+What is the name of the NIC you are connected to the internet through
+What would you like to call your ssid
+
+
+Your system settings are:
+System IP:        10.135.203.158
+Local IP          172.16.5.1
+Subnet mask:      255.255.255.0
+Broadcast         172.16.5.255
+DNS Server        172.16.5.1, 8.8.8.8
+Network mask:     172.16.5.0
+Local NIC Name:   wlan4
+Remote NIC Name   wlan0
+SSID:             free wifi
+
+
+Have you installed your dhcp server? (y/n)
+you have a dhcp server
+We can skip the dhcp installation
+Creating dhcp configuration file
