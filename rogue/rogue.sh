@@ -82,12 +82,12 @@ read answer1
 	fi
 done
 
-cp /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.bak
+cp -v /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.bak
 echo scripts > /etc/default/isc-dhcp-server
 echo INTERFACES="at0" >> /etc/default/isc-dhcp-server
 
 
-cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bak
+cp -v /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.bak
 echo "Creating dhcp configuration file"
 #dhcp configuration file
 echo "authoritative;
@@ -124,25 +124,4 @@ ifconfig $local_nic up
 iwconfig $local_nic txpower 30
 ifconfig $local_nic up
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#EOF
