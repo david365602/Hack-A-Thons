@@ -4,42 +4,39 @@
 echo "We Shall Begin"
 
 #collects system ip
-echo "What is the IP address of your current System?"
-read systemIP 
+read -p "What is the IP address of your current System: " systemIP
+echo ""
 
-echo "Give an IP address for your other network ex: 172.16.5.1"
-read local_IP
+read -p "Give an IP address for your other network <ex: 172.16.5.1>: " local_IP
+echo ""
 
-echo "Give your dns IP address ex: 172.16.5.1"
-echo "for multiple dns servers ex: 172.16.5.1, 8.8.8.8"
-read dns_server
+read -p "Give your dns IP address <ex: 172.16.5.1>
+for multiple dns servers <ex: 172.16.5.1, 8.8.8.8>:" dns_server
+echo ""
 
-#collects subnet mask
-echo "What is the subnet mask of the network you want to create? ex: 255.255.255.0"
-read subnet_mask
+read -p "What is the subnet mask of the network you want to create? <ex: 255.255.255.0>" subnet_mask
+echo ""
 
-#collects default gateway address
-echo "What is the network subnet that you will create? ex: 192.168.1.0"
-read network_mask
+read -p "What is the network subnet that you will create? <ex: 192.168.1.0>: " network_mask
+echo ""
 
-echo "Enter the range of IPs EXACTLY like this: 192.168.1.5 192.168.1.150"
-read range
+read -p "Enter the range of IPs EXACTLY like this: <192.168.1.5 192.168.1.150>: " range
+echo ""
 
-echo "Enter the broadcast address ex: 192.168.1.255"
-read broadcast
+read -p "Enter the broadcast address <ex: 192.168.1.255>: "broadcast
+echo ""
 
 #collects local network card name
-echo "What is network card name that you will create the AP on"
-read local_nic
+read -p "What is network card name that you will create the AP on: " local_nic
+echo ""
 
 #collects local NIC name
-echo "What is the name of the NIC you are connected to the internet through"
-read remote_nic
-
+read -p "What is the name of the NIC you are connected to the internet through<ex: eth0;wlan0;wlan1;etc>: " remote_nic
+echo ""
 
 #collects name for ssid
-echo "What would you like to call your ssid"
-read ssid
+read -p "What would you like to call your ssid: " ssid
+echo ""
 
 echo "
 "
