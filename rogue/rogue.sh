@@ -39,21 +39,18 @@ read -p "What would you like to call your ssid: " ssid
 echo ""
 
 echo "
+Your system settings are:
+System IP:        $systemIP
+Local IP          $local_IP
+Subnet mask:      $subnet_mask
+Broadcast         $broadcast
+DNS Server        $dns_server
+Network mask:     $network_mask
+Local NIC Name:   $local_nic
+Remote NIC Name   $remote_nic
+SSID:             $ssid
 "
-
-echo "Your system settings are:"
-echo "System IP:        $systemIP"
-echo "Local IP          $local_IP"
-echo "Subnet mask:      $subnet_mask"
-echo "Broadcast         $broadcast"
-echo "DNS Server        $dns_server"
-echo "Network mask:     $network_mask"
-echo "Local NIC Name:   $local_nic"
-echo "Remote NIC Name   $remote_nic"
-echo "SSID:             $ssid"
 sleep 5
-echo "
-"
 
 
 variable=0
